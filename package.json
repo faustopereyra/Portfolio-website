@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Code for my portfolio/pesentation website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faustopereyra/Portfolio-website.git"
+  },
+  "author": "Fausto Pereyra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faustopereyra/Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/faustopereyra/Portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
