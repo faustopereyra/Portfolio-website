@@ -1,0 +1,18 @@
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/proyect";
+
+@import "layout/hero";
+@import "layout/contact";
+@import "layout/header";
+@import "layout/capabilities";
+@import "layout/proyects";
+
+@import "pages/main-page";
