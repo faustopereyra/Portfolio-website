@@ -1,0 +1,16 @@
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    
+    &--text{
+        //width: 40vw;
+    }
+
+    &--img{
+        &__img{
+            width: auto;
+            max-height: 60rem;
+        }
+    }
+}
