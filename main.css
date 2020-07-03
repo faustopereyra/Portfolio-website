@@ -59,9 +59,8 @@ body {
   color: #000;
   text-transform: uppercase;
   backface-visibility: hidden;
-  font-size: 4.5rem;
-  font-weight: 700;
-  letter-spacing: .5rem; }
+  font-size: 3rem;
+  font-weight: 700; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       letter-spacing: 1rem;
@@ -131,12 +130,13 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: .5rem 1.5rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
+  font-weight: bold;
   border: none;
   cursor: pointer; }
 
@@ -158,10 +158,10 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-.btn--green {
-  background-color: #0062FF;
+.btn--blue {
+  background: linear-gradient(90deg, #0062FF 0%, #009BFF 100%);
   color: #fff; }
-  .btn--green::after {
+  .btn--blue::after {
     background-color: #0062FF; }
 
 .btn::after {
@@ -176,24 +176,14 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
-
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
+  font-weight: bold;
   color: #0062FF;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #0062FF;
   padding: 3px;
   transition: all .2s; }
-
-.btn-text:hover {
-  background-color: #0062FF;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -201,8 +191,26 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center; }
+  grid-template-columns: 1.5fr 1fr;
+  justify-items: center;
+  align-items: center; }
   .hero--img__img {
     width: auto;
     max-height: 60rem; }
+
+.header {
+  height: 4rem; }
+  .header--list {
+    margin-top: 2rem;
+    list-style: none;
+    font-size: 1.6rem;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    display: grid;
+    font-weight: 500;
+    color: #0062FF;
+    font-weight: bold; }
+    .header--list a {
+      color: #444444;
+      letter-spacing: 2px;
+      text-decoration: none;
+      align-items: center; }

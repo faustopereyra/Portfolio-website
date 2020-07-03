@@ -4,12 +4,13 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
+        padding: .5rem 1.5rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        font-weight: bold;
 
         //Change for the <button> element
         border: none;
@@ -42,8 +43,9 @@
         }
     }
 
-    &--green {
-        background-color: $color-primary;
+    &--blue {
+        background: linear-gradient(90deg, $color-primary 0%, $color-primary-light 100%);
+        //background-color: $color-primary;
         color: $color-white;
 
         &::after {
@@ -64,29 +66,19 @@
         transition: all .4s;
     }
     
-    &--animated {
-        animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
-    }
+    
 }
 
 .btn-text {
     &:link,
     &:visited {
         font-size: $default-font-size;
+        font-weight: bold;
         color: $color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid $color-primary;
         padding: 3px;
         transition: all .2s;
-    }
-
-    &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2px);
     }
 
     &:active {

@@ -1,7 +1,8 @@
 .hero{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     justify-items: center;
+    align-items: center;
     
     &--text{
         //width: 40vw;

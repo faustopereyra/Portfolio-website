@@ -42,6 +42,9 @@ body {
     }
 }
 
+p{
+    //font-size: $default-font-size;
+}
 ::selection {
     background-color: $color-primary;
     color: $color-white;

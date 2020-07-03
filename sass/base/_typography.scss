@@ -13,9 +13,9 @@ body {
 
     backface-visibility: hidden;
 
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: .5rem;
+    //letter-spacing: .5rem;
         
     @include respond(phone) {
         letter-spacing: 1rem;
