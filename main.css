@@ -80,10 +80,8 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-  display: inline-block;
   color: #444444;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: .2rem; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -95,8 +93,8 @@ body {
     font-size: 2.5rem; }
 
 .heading-tertiary {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 500;
   color: #444444;
   text-transform: uppercase; }
 
@@ -189,9 +187,22 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem 0;
+  justify-items: center; }
+  .project img {
+    width: 30rem;
+    height: auto; }
+  .project p {
+    font-size: 1.6rem; }
+  .project--text {
+    max-width: 80%; }
+
 .hero {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   justify-items: center;
   align-items: center; }
   .hero--img__img {
@@ -214,3 +225,7 @@ body {
       letter-spacing: 2px;
       text-decoration: none;
       align-items: center; }
+
+.projects--title {
+  text-align: center;
+  margin: 3rem 0; }

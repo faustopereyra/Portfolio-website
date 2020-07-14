@@ -1,17 +1,20 @@
 .hero{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     justify-items: center;
     align-items: center;
     
     &--text{
         //width: 40vw;
     }
-
+    
     &--img{
+        
         &__img{
             width: auto;
             max-height: 60rem;
-        }
+            
     }
+        }
+        
 }

@@ -40,10 +40,10 @@ body {
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
+    //display: inline-block;
     color: $color-grey-dark;
     letter-spacing: .2rem;
-    transition: all .2s;
+    //transition: all .2s;
 
     @include respond(tab-port) {
         font-size: 3rem;
@@ -61,12 +61,12 @@ body {
 }
 
 .heading-tertiary {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 500;
     color: $color-grey-dark;
     text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: $default-font-size;
+    font-size:$medium-font-size;
 }
