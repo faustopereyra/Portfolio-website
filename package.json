@@ -4,7 +4,8 @@
   "description": "Code for my portfolio/pesentation website",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss main.css -w"
+    "watch:sass": "node-sass sass/main.scss main.css -w",
+    "start": "watch:sass live-server"
   },
   "repository": {
     "type": "git",
