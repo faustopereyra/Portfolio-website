@@ -1,0 +1,20 @@
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+
+    p{
+        font-size: $default-font-size;
+    }
+
+    &--info{
+        text-align: right;
+        margin-top: 2rem;
+    }
+
+    &--cta {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}

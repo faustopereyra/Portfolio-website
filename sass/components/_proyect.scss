@@ -1,24 +1,36 @@
 .project{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 5rem 0;
+    margin: 10rem 0;
     justify-items: center;
-    
 
-
-    img{
+    &--img{
         width: 30rem;
         height: auto;
     }
 
-    p{
-        font-size: $default-font-size;
-        //margin: 10rem 0;
-        //color: blue;
-    }
-
     &--text{
         max-width: 80%;
-        //text-align: center;
+        
+        p{
+            font-size: $default-font-size;
+        }
+
     }
+
+    &--icons{
+        display: flex;
+        //background-color: blueviolet;
+        
+        &__single{
+            width: auto;
+            height: 4rem;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.notify--img{
+    height: auto;
+    width: 100%;
 }

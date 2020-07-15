@@ -1,0 +1,23 @@
+.capabilities{
+    margin: 10rem 0;
+}
+
+.abilities{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.ability{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
+    p{
+        font-size: $default-font-size;
+    }
+    &--svg{
+        width: 6rem;
+        height: auto;
+    }
+}

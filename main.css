@@ -80,8 +80,8 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #444444;
-  letter-spacing: .2rem; }
+  letter-spacing: .2rem;
+  color: #0062FF; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 3rem; } }
@@ -89,13 +89,11 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary--blue {
-    color: #0062FF;
     font-size: 2.5rem; }
 
 .heading-tertiary {
-  font-size: 4rem;
-  font-weight: 500;
-  color: #444444;
+  font-size: 3rem;
+  font-weight: 800;
   text-transform: uppercase; }
 
 .paragraph {
@@ -190,15 +188,25 @@ body {
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 5rem 0;
+  margin: 10rem 0;
   justify-items: center; }
-  .project img {
+  .project--img {
     width: 30rem;
     height: auto; }
-  .project p {
-    font-size: 1.6rem; }
   .project--text {
     max-width: 80%; }
+    .project--text p {
+      font-size: 1.6rem; }
+  .project--icons {
+    display: flex; }
+    .project--icons__single {
+      width: auto;
+      height: 4rem;
+      margin: 0 1rem; }
+
+.notify--img {
+  height: auto;
+  width: 100%; }
 
 .hero {
   display: grid;
@@ -208,6 +216,18 @@ body {
   .hero--img__img {
     width: auto;
     max-height: 60rem; }
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0; }
+  .contact p {
+    font-size: 1.6rem; }
+  .contact--info {
+    text-align: right;
+    margin-top: 2rem; }
+  .contact--cta p {
+    margin-bottom: 1rem; }
 
 .header {
   height: 4rem; }
@@ -225,6 +245,24 @@ body {
       letter-spacing: 2px;
       text-decoration: none;
       align-items: center; }
+
+.capabilities {
+  margin: 10rem 0; }
+
+.abilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center; }
+
+.ability {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center; }
+  .ability p {
+    font-size: 1.6rem; }
+  .ability--svg {
+    width: 6rem;
+    height: auto; }
 
 .projects--title {
   text-align: center;
