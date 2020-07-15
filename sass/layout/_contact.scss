@@ -3,6 +3,12 @@
     justify-content: space-between;
     margin: 5rem 0;
 
+    @include respond(phone) {
+        display: initial;
+
+        text-align: center;
+    }
+
     p{
         font-size: $default-font-size;
     }
@@ -10,6 +16,11 @@
     &--info{
         text-align: right;
         margin-top: 2rem;
+
+        @include respond(phone) {
+            text-align: center;
+            margin: 4rem 0;
+        }
     }
 
     &--cta {

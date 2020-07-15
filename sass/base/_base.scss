@@ -14,7 +14,7 @@ html {
     }
 
     @include respond(tab-port) { // width < 900?
-        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+        font-size: 45%; //1 rem = 8px, 8/16 = 50%
     }
     
     @include respond(big-desktop) {
@@ -25,25 +25,31 @@ html {
 body {
     box-sizing: border-box;
     max-width: 1200px;
+    padding: 0 5rem;
     //width: 100%;
     margin-right: auto;
     margin-left: auto;
     
+    @include respond(phone) {
+        padding: 0;
+    }
+
     @include respond(tab-land) { // width < 1200?
-        max-width: 768px;
+        //max-width: 868px;
     }
 
     @include respond(tab-port) { // width < 900?
         max-width: 1024px;
+        
     }
     
     @include respond(big-desktop) {
-        
+        max-width: 1524px;
     }
 }
 
 p{
-    //font-size: $default-font-size;
+    font-size: $default-font-size;
 }
 ::selection {
     background-color: $color-primary;

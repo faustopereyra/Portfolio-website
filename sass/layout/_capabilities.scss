@@ -1,11 +1,19 @@
 .capabilities{
     margin: 10rem 0;
+    @include respond(phone) {
+        margin: 0;
+        margin-bottom: 10rem;
+    }
 }
 
 .abilities{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
 
 .ability{

@@ -22,12 +22,12 @@ $color-grey-dark-3: #333;
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 112.5em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 45%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -35,14 +35,21 @@ html {
 body {
   box-sizing: border-box;
   max-width: 1200px;
+  padding: 0 5rem;
   margin-right: auto;
   margin-left: auto; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 40em) {
     body {
-      max-width: 768px; } }
+      padding: 0; } }
   @media only screen and (max-width: 56.25em) {
     body {
       max-width: 1024px; } }
+  @media only screen and (min-width: 112.5em) {
+    body {
+      max-width: 1524px; } }
+
+p {
+  font-size: 1.6rem; }
 
 ::selection {
   background-color: #0062FF;
@@ -51,7 +58,6 @@ body {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #000; }
 
@@ -61,10 +67,6 @@ body {
   backface-visibility: hidden;
   font-size: 3rem;
   font-weight: 700; }
-  @media only screen and (max-width: 37.5em) {
-    .heading-primary {
-      letter-spacing: 1rem;
-      font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -72,7 +74,7 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
     margin-bottom: 6rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40em) {
       .heading-primary--sub {
         letter-spacing: .5rem; } }
 
@@ -82,12 +84,6 @@ body {
   font-weight: 700;
   letter-spacing: .2rem;
   color: #0062FF; }
-  @media only screen and (max-width: 56.25em) {
-    .heading-secondary {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .heading-secondary {
-      font-size: 2.5rem; } }
   .heading-secondary--blue {
     font-size: 2.5rem; }
 
@@ -190,29 +186,64 @@ body {
   grid-template-columns: 1fr 1fr;
   margin: 10rem 0;
   justify-items: center; }
+  @media only screen and (max-width: 40em) {
+    .project {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      margin: 5rem 0; } }
   .project--img {
     width: 30rem;
     height: auto; }
+    @media only screen and (max-width: 40em) {
+      .project--img {
+        width: 45rem; } }
   .project--text {
     max-width: 80%; }
+    @media only screen and (max-width: 40em) {
+      .project--text {
+        max-width: 70%;
+        text-align: center; } }
     .project--text p {
       font-size: 1.6rem; }
   .project--icons {
     display: flex; }
+    @media only screen and (max-width: 40em) {
+      .project--icons {
+        justify-content: center; } }
     .project--icons__single {
       width: auto;
       height: 4rem;
       margin: 0 1rem; }
+      @media only screen and (max-width: 40em) {
+        .project--icons__single {
+          margin-top: 2rem; } }
 
-.notify--img {
-  height: auto;
-  width: 100%; }
+.notify {
+  grid-template-rows: 1fr 1fr; }
+  .notify--img {
+    height: auto;
+    width: 100%; }
+    @media only screen and (max-width: 40em) {
+      .notify--img {
+        width: auto;
+        height: 40rem; } }
+  @media only screen and (max-width: 40em) {
+    .notify--text {
+      grid-row-start: 2; } }
 
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   justify-items: center;
   align-items: center; }
+  @media only screen and (max-width: 40em) {
+    .hero {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      margin-top: 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .hero--text {
+      text-align: center; } }
   .hero--img__img {
     width: auto;
     max-height: 60rem; }
@@ -221,15 +252,24 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 5rem 0; }
+  @media only screen and (max-width: 40em) {
+    .contact {
+      display: initial;
+      text-align: center; } }
   .contact p {
     font-size: 1.6rem; }
   .contact--info {
     text-align: right;
     margin-top: 2rem; }
+    @media only screen and (max-width: 40em) {
+      .contact--info {
+        text-align: center;
+        margin: 4rem 0; } }
   .contact--cta p {
     margin-bottom: 1rem; }
 
 .header {
+  display: none;
   height: 4rem; }
   .header--list {
     margin-top: 2rem;
@@ -248,11 +288,19 @@ body {
 
 .capabilities {
   margin: 10rem 0; }
+  @media only screen and (max-width: 40em) {
+    .capabilities {
+      margin: 0;
+      margin-bottom: 10rem; } }
 
 .abilities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center; }
+  @media only screen and (max-width: 40em) {
+    .abilities {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr; } }
 
 .ability {
   display: grid;
