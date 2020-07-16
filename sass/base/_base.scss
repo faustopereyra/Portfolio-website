@@ -9,16 +9,16 @@
 
 html {
     font-size: 62.5%;
-    @include respond(tab-land) { // width < 1200?
-        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    @include respond(tab-land) { 
+        font-size: 56.25%;
     }
 
-    @include respond(tab-port) { // width < 900?
-        font-size: 45%; //1 rem = 8px, 8/16 = 50%
+    @include respond(tab-port) { 
+        font-size: 45%; 
     }
     
     @include respond(big-desktop) {
-        font-size: 75%; //1rem = 12, 12/16
+        font-size: 75%; 
     }
 }
 
@@ -26,7 +26,6 @@ body {
     box-sizing: border-box;
     max-width: 1200px;
     padding: 0 5rem;
-    //width: 100%;
     margin-right: auto;
     margin-left: auto;
     
@@ -34,11 +33,7 @@ body {
         padding: 0;
     }
 
-    @include respond(tab-land) { // width < 1200?
-        //max-width: 868px;
-    }
-
-    @include respond(tab-port) { // width < 900?
+    @include respond(tab-port) {
         max-width: 1024px;
         
     }

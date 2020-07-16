@@ -12,7 +12,6 @@
         font-size: $default-font-size;
         font-weight: bold;
 
-        //Change for the <button> element
         border: none;
         cursor: pointer;
     }
@@ -45,7 +44,6 @@
 
     &--blue {
         background: linear-gradient(90deg, $color-primary 0%, $color-primary-light 100%);
-        //background-color: $color-primary;
         color: $color-white;
 
         &::after {

@@ -50,6 +50,7 @@
     }
 
     &__nav {
+        display: none;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -111,7 +112,12 @@
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
+        display: block;
         width: 100%;
+    }
+
+    &__checkbox:checked ~ &__link{
+        display: inline-block;
     }
 
 
@@ -163,34 +169,3 @@
         transform: rotate(-135deg);
     }
 }
-
-.header{
-    display: none;
-}
-/*
-.header{
-    display: none;
-    //box-shadow: ;
-    //border-bottom: solid 1px $color-grey-dark;
-    height: 4rem;
-    //align-items: center;
-    //text-align: center;
-    
-    &--list{
-        margin-top: 2rem;
-        list-style: none;
-        font-size: $default-font-size;
-        grid-template-columns: 5fr 1fr 1fr 1fr;
-        display: grid;
-        font-weight: 500;
-        color: $color-primary;
-        font-weight: bold;
-        & a {
-            color: $color-grey-dark;
-            letter-spacing: 2px;
-            text-decoration: none;
-            align-items: center;
-        }
-    }
-}
-*/
