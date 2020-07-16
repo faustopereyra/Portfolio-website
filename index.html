@@ -23,6 +23,26 @@
         </div>
     </header>
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#projects" class="navigation__link"><span>01</span>Projects</a>
+                </li>
+                <li class="navigation__item"><a href="#capabilities"
+                        class="navigation__link"><span>02</span>Capabilities</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link"><span>03</span>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="hero">
         <div class="hero--text">
             <p>Hi there, I'm Fausto 👋</p>
@@ -42,7 +62,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <h2 class="heading-secondary projects--title ">My Projects</h2>
         <div class="project">
             <div><img class="project--img" src="media/images/Pomodoro App.png" alt=""></div>
@@ -92,7 +112,7 @@
         </div>
     </div>
 
-    <div class="capabilities">
+    <div class="capabilities" id="capabilities">
         <h2 class="heading-secondary projects--title ">Capabilities</h2>
         <div class="abilities">
             <div class="ability">
@@ -114,7 +134,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact--cta">
             <h2 class="heading-secondary heading-secondary--blue">In need of a Software Engineer?</h2>
             <p>I'm currently available and looking for work.</p>
@@ -127,7 +147,18 @@
 
     </div>
 
+    <script>
 
+        let checkToggle = () => {
+            document.getElementById("navi-toggle").checked = false;
+        }
+
+        let nav = document.querySelectorAll(".navigation__item");
+
+        nav[0].addEventListener("click", checkToggle)
+        nav[1].addEventListener("click", checkToggle)
+        nav[2].addEventListener("click", checkToggle)
+    </script>
 </body>
 
 </html>
